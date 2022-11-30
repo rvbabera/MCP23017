@@ -60,15 +60,21 @@ int main()
     /* Setting IO direction of port A */
 
     data[0] = 0x00;
-    data[1] = 0xaa;
+    data[1] = 0x00;
 
     if(write(i2c_bus,data,2) != 2)
     {
         printf("failed to set data in registers\n");
         return -4;
     }
+    
+    data[0] = 0x09;
+    data[1] = 0xaa;
+    
+    if(write(i2c_bus,data,2) != 2)
+    {
+        printf("Failed to Write on GPIO A\n");
+        return -5;
 
     return 0;
-
-
 }
