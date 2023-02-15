@@ -1,6 +1,6 @@
 # MCP23017
 
-This Code Shows Hoe to interact with a GPIO extender MCP23017 with i2c communication.
+This Code Shows How to interact with a GPIO extender MCP23017 with i2c communication.
 
 In This I have used regiter addresses to control the external GPIO. MCP23017 IC provides 2 8-bit IO Banks or you c an use these two as one 16-bit
 IO bank.
